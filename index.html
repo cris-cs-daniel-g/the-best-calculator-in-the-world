@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Best Calculator in the World</title>
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <h1>Calculator</h1>
+
+        <!-- Added step="any" to allow decimals -->
+        <input type="number" id="num1" placeholder="First number" step="any">
+        <input type="number" id="num2" placeholder="Second number" step="any">
+
+        <br><br>
+
+        <div class="buttons">
+
+            <!-- Clear button -->
+            <button onclick="clearAll()">C</button>
+
+            <!-- Math buttons -->
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('*')">*</button>
+            <button onclick="calculate('/')">/</button>
+
+        </div>
+
+        <!-- Result -->
+        <h2 id="result">Result: </h2>
+
+        <!-- History -->
+        <button onclick="showHistory()">Show History</button>
+        <ul id="history"></ul>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
